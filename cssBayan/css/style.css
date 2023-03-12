@@ -1,0 +1,70 @@
+.main {
+  background: #edf3ec;
+  font-family: "Poppins", sans-serif;
+  color: #182e14;
+  box-sizing: border-box;
+}
+.container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 110px;
+}
+.title {
+  padding: 25px 0;
+}
+.section {
+  border-top: 1px solid #999999;
+  margin-bottom: 50px;
+  max-width: 900px;
+}
+.img-wrapper {
+  display: none;
+  
+}
+.img-container {
+  max-width: 900px;
+}
+
+.img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.input {
+  appearance: none;
+  position: absolute;
+  
+}
+.input-title {
+  display: block;
+  max-width: 880px;
+  cursor: pointer;
+  transition: background 0.3s ease-out;
+  padding: 10px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.input-title:hover {
+  background-color: rgb(179, 194, 189);
+}
+
+.input:checked ~ .img-wrapper {
+  display: block;
+  
+}
+.arrow {
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 13%;
+  right: 15px;
+}
+.input:checked ~ .input-title > .arrow {
+  transform: rotate(180deg);
+}
