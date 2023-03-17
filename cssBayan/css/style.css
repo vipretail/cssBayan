@@ -28,7 +28,6 @@
 .img-container {
   max-width: 900px;
 }
-
 .img-container img {
   object-fit: cover;
   width: 100%;
@@ -48,11 +47,9 @@
   margin: 20px 0;
   position: relative;
 }
-
 .input-title:hover {
   background-color: rgb(179, 194, 189);
 }
-
 .input:checked ~ .img-wrapper {
   display: block;
   
